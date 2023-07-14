@@ -1,0 +1,72 @@
+.contact-form-checkbox-label {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+    background-color: #FFFFFF;
+  }
+  
+  .contact-form-checkbox {
+  margin-bottom: 10px;
+  border: 2px solid #212121;
+  color: var(--accent-color);
+
+  &:checked {
+    background-color: var(--accent-color);
+  }
+
+  
+  &:checked {
+    background-color:  #2196f3;
+    outline-offset: 2px;
+  }
+
+  }
+
+  .contact-checkbox {
+    margin-left: 13px;
+  }
+  
+  .checkbox-link {
+  color: rgba(33, 150, 243, 1);
+  }
+  
+  .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff;
+    padding: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 15px;
+    height: 16px;
+  }
+  
+  .black-border {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+    align-items: center;
+    justify-content: center;
+
+  .contact-form-checkbox:checked + .contact-form-checkbox-label & {
+    background-color: var(--accent-color);
+    border-color:  #2196f3;
+    outline-offset: 2px;
+    }
+  
+    .contact-form-checkbox:focus + .contact-form-checkbox-label & {
+      border-radius: 2px;
+      border: 2px solid #2196f3;
+    }
+  }
+  
+ 
+  

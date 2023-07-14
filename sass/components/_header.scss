@@ -1,0 +1,88 @@
+.header__link {
+display: none;
+}
+
+
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__info {
+    display: none;
+  }
+}
+
+.contacts {
+  display: none;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+/*.header {
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container .header__container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  */
+  .header__logo {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    padding-top: 16px;
+  }
+  
+  .header__logo.link {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+  }
+  /*
+  .header__menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__link .link {
+    display: flex;
+  }
+  */
+  .list {
+    list-style: none;
+
+    padding-left: 0;
+    gap: 30px;
+    padding: 0;
+    margin-left: 0;
+    margin: 0;
+  }
+  /*
+  .contacts.list .mail {
+    margin-right: 50px;
+  }
+*/
+  .accent {
+    color: var(--accent-color);
+  } 

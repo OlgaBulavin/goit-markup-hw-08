@@ -1,0 +1,66 @@
+.form {
+    margin-left: auto;
+  }
+  
+  .form input {
+  margin: 0;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2F303A;
+  padding-left: 16px;
+  }
+  
+  .subcribe-input {
+    transform: border-color 250 ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;
+
+    &:focus {
+      border-color: var(--title-text-color);
+      outline: none;
+    }
+  }
+  
+  
+  .sub-text {
+    font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  }
+  
+  .btn-submit {
+    width: 200px;
+    height: 50px;
+    left: 1213px;
+    top: 1757px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+  padding: 0;
+  }
+  
+  .btn-sub-icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+   margin-left: 10px;
+   padding: 0;
+   vertical-align: middle;
+  }
+  
