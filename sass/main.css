@@ -1083,9 +1083,15 @@ footer .container {
   pointer-events: auto;
 }
 
+.mobile-menu__soc-link {
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+}
+
 .mobile-menu__socials {
   display: none;
-  text-decoration: none;
 }
 @media screen and (min-width: 480px) {
   .mobile-menu__socials {
@@ -1108,13 +1114,13 @@ footer .container {
 }
 
 .mobile-menu__link {
-  display: flex;
+  display: block;
   text-decoration: none;
   list-style: none;
   font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.2;
-  color: rgb(33, 150, 243);
+  color: rgb(33, 33, 33);
 }
 
 .mobile-contacts__mail {
