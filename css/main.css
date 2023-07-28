@@ -1069,11 +1069,10 @@ footer .container {
 }
 
 .mobile-menu__list {
+  font-family: Roboto;
   list-style: none;
-  font-family: var(--main-font);
-  font-size: 40px;
-  line-height: 1.17;
-  color: rgb(33, 33, 33);
+  margin-left: 40px;
+  margin-bottom: 32px;
 }
 
 .mobile-menu.is-open {
@@ -1085,8 +1084,11 @@ footer .container {
 .mobile-menu__soc-link {
   display: block;
   font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
   text-decoration: none;
   list-style: none;
+  color: rgb(33, 150, 243);
 }
 
 .mobile-menu__socials {
@@ -1117,9 +1119,12 @@ footer .container {
   text-decoration: none;
   list-style: none;
   font-family: var(--main-font);
-  font-size: 18px;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 500;
   line-height: 1.2;
   color: rgb(33, 33, 33);
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__mail {
@@ -1129,6 +1134,8 @@ footer .container {
   color: rgb(33, 150, 243);
   list-style: none;
   text-decoration: none;
+  margin-left: 40px;
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__tel {
@@ -1138,6 +1145,7 @@ footer .container {
   color: rgb(117, 117, 117);
   list-style: none;
   text-decoration: none;
+  margin-left: 40px;
 }
 
 .menu-toggle {
