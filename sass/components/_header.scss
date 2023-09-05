@@ -26,7 +26,7 @@ display: none;
   position: relative;
 }
 
-/*.header {
+.header {
     border-bottom: 1px solid #ececec;
   }
   
@@ -59,7 +59,7 @@ display: none;
     color: var(--secondary-text-color);
     text-decoration: none;
   }
-  /*
+  
   .header__menu {
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@ display: none;
   .header__link .link {
     display: flex;
   }
-  */
+  
   .list {
     list-style: none;
 
@@ -78,11 +78,11 @@ display: none;
     margin-left: 0;
     margin: 0;
   }
-  /*
+  
   .contacts.list .mail {
     margin-right: 50px;
   }
-*/
+
   .accent {
     color: var(--accent-color);
   } 

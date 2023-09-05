@@ -385,7 +385,6 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   color: var(--accent-color);
 }
 
-/*
 .contacts {
   display: flex;
   color: var(--primary-text-color);
@@ -400,8 +399,12 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   padding: 0;
   margin: 0 0 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
 
-*/
 .contact-form-field {
   display: block;
   margin-bottom: 10px;
@@ -1067,12 +1070,24 @@ footer .container {
   pointer-events: none;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .mobile-menu__list {
   font-family: Roboto;
   list-style: none;
-  margin-left: 40px;
   margin-bottom: 32px;
+}
+
+.mobile-contacts__mail-li {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__tel-li {
+  margin-bottom: 64px;
 }
 
 .mobile-menu.is-open {
@@ -1126,6 +1141,13 @@ footer .container {
   color: rgb(33, 33, 33);
   margin-bottom: 32px;
 }
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: rgb(33, 150, 243);
+}
+
+.mobile-menu__link-last {
+  margin-bottom: 306px;
+}
 
 .mobile-contacts__mail {
   font-family: var(--main-font);
@@ -1151,13 +1173,22 @@ footer .container {
 .menu-toggle {
   min-width: 40px;
   min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
+  border-radius: 50%;
   padding: 0;
   margin: 0;
   line-height: 0;
   cursor: pointer;
   outline: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .mobile-menu__close-btn {
@@ -1207,16 +1238,10 @@ mobile-menu__close-icon .menu-container.is-open {
   .header__link {
     display: none;
   }
-  .menu-toggle {
-    display: none;
-  }
 }
 @media screen and (min-width: 768px) {
   .header__link {
     display: block;
-  }
-  .menu-toggle {
-    display: none;
   }
   .mobile-menu {
     display: none;
