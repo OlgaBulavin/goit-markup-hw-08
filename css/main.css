@@ -1090,11 +1090,6 @@ footer .container {
   margin-bottom: 64px;
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
 
 .mobile-menu__soc-link {
   display: block;
