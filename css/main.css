@@ -298,11 +298,6 @@ a:hover svg.social-list-icon, a:focus svg.social-list-icon {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
 .container .header__container {
   display: flex;
   align-items: center;
@@ -558,6 +553,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 .duty__item {
   width: 270px;
 }
+@media screen and (max-width: 767px) {
+  .duty__item {
+    width: 100vw;
+  }
+}
 
 .duty__link {
   display: flex;
@@ -655,6 +655,17 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 
 .gallery {
   width: 370px;
+}
+
+.gallerylist {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 30px;
+  padding: 0;
+  margin-left: 0;
+  margin: 0;
 }
 
 .link-sdw {
@@ -779,6 +790,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 
 .section-work {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .section-title {
@@ -1067,7 +1083,6 @@ footer .container {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 306px;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -1128,6 +1143,7 @@ footer .container {
   line-height: 1.2;
   color: rgb(33, 33, 33);
   margin-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: rgb(33, 150, 243);
@@ -1137,6 +1153,10 @@ footer .container {
   list-style: none;
   padding-left: 0;
   margin-bottom: 64px;
+}
+
+.mob-contacts {
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__mail {
@@ -1171,26 +1191,31 @@ footer .container {
   line-height: 0;
   cursor: pointer;
   outline: none;
-  fill: black;
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-.menu-toggle:hover, .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
 .menu-toggle__icon {
-  fill: black;
+  fill: rgb(33, 33, 33);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle__icon:hover, .menu-toggle__icon:focus {
+  fill: rgb(33, 150, 243);
 }
 
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: rgb(33, 33, 33);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container .menu-toggle:hover, .menu-container .menu-toggle:focus {
+  color: rgb(33, 150, 243);
 }
 
 .mobile-menu__close-btn {
@@ -1231,8 +1256,5 @@ footer .container {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: rgb(0, 0, 0);
-}
-.menu-container .menu-toggle:hover, .menu-container .menu-toggle:focus {
-  color: rgb(33, 150, 243);
+  fill: rgb(0, 0, 0);
 }/*# sourceMappingURL=main.css.map */

@@ -2,8 +2,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 306px;
-
+ 
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -65,6 +64,8 @@ margin-bottom: 48px;
        line-height: 1.2;
        color: rgba(33, 33, 33, 1);
        margin-bottom: 32px;
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
 
        &:hover, &:focus {
         color: rgba(33, 150, 243, 1);
@@ -75,6 +76,10 @@ margin-bottom: 48px;
   list-style: none;
   padding-left: 0;
   margin-bottom: 64px;
+}
+
+.mob-contacts {
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__mail {
@@ -111,26 +116,32 @@ margin-bottom: 48px;
     line-height: 0;
     cursor: pointer;
     outline: none;
-    fill: black;
+    color: black;
 
     @media screen and (min-width: 768px) {
           display: none;
         }
-
-        &:hover, &:focus {
-        background-color: rgba(0, 0, 0, 0.1);
-        }  
 }
 
 .menu-toggle__icon {
-fill: black;
-}
+  fill: rgba(33, 33, 33, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    fill: rgba(33, 150, 243, 1);
+  }
+  }
 
 .menu-container .menu-toggle {
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
+    color: rgba(33, 33, 33, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+      color:rgba(33, 150, 243, 1)
+    }
   }
 
 
@@ -174,11 +185,6 @@ fill: black;
     position: absolute;
     top: 16px;
     right: 16px;
-    color: rgb(0, 0, 0);
-
-    &:hover, &:focus {
-      color: rgba(33, 150, 243, 1);
-
-    }
+    fill: rgb(0, 0, 0); 
   }
   
