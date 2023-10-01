@@ -578,6 +578,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   margin-bottom: 10px;
   margin-top: 0;
 }
+@media screen and (max-width: 767px) {
+  .duty__title {
+    text-align: center;
+  }
+}
 
 .duty__text {
   font-size: 14px;
