@@ -555,7 +555,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (max-width: 767px) {
   .duty__item {
-    width: 100vw;
+    width: 450px;
   }
 }
 
@@ -568,6 +568,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .duty__link {
+    width: 450px;
+  }
 }
 
 .duty__title {
@@ -664,13 +669,17 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 
 .gallerylist {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  gap: 30px;
   padding: 0;
   margin-left: 0;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .gallerylist {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 30px;
+  }
 }
 
 .link-sdw {
@@ -811,6 +820,18 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   margin-bottom: 50px;
   margin-top: 0;
 }
+@media screen and (max-width: 767px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
 
 .thumb {
   position: relative;
@@ -901,6 +922,17 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 .client-list-item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .client-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-list-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 a svg.client-icon {
