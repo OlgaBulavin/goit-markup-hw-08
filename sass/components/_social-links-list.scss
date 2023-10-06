@@ -20,10 +20,12 @@
   .social-list-item {
     display: block;
     margin-right: 10px;
+    max-width: 480px;
 
     &:last-child {
       margin: 0;
     }
+    
     
   }
   
