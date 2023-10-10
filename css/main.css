@@ -649,7 +649,17 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .gallery {
-  width: 370px;
+  max-width: 370px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    max-width: calc((100% - 60px) / 3);
+  }
 }
 
 .gallerylist {
@@ -661,6 +671,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   flex-wrap: wrap;
   padding-left: 0;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .gallerylist {
+    max-width: calc((100% - 30px) / 2);
+  }
 }
 
 .link-sdw {
@@ -852,17 +867,25 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 @media screen and (max-width: 1199px) {
   .container-team {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-team {
+    width: 450px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 
 .item-shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-shadow {
-    display: flex;
+    max-width: 354px;
   }
 }
 
