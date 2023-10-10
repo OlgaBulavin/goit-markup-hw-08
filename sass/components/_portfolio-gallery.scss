@@ -21,7 +21,7 @@
     padding-left: 0;
     gap: 30px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: calc((100% - 30px) / 2);
   }
 
