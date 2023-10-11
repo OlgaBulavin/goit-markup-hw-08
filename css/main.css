@@ -34,6 +34,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .image {
   display: block;
 }
@@ -865,18 +871,21 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .container-team {
-    width: 1200px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .container-team {
-    width: 450px;
-    margin-bottom: 30px;
-    text-align: center;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-team {
+    width: 1200px;
   }
 }
 
