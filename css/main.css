@@ -67,7 +67,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -93,6 +92,11 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero.overlay .hero.overlay {
+    background-image: url("../images/Headerimg@2x.jpg");
+  }
 }
 
 .button.primary {
@@ -872,7 +876,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-shadow {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
