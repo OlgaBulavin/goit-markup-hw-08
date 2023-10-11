@@ -653,12 +653,12 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (min-width: 768px) {
   .gallery {
-    max-width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery {
-    max-width: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -674,7 +674,8 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallerylist {
-    max-width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
+    margin: 15px;
   }
 }
 
@@ -885,7 +886,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-shadow {
-    max-width: 354px;
+    width: 354px;
   }
 }
 

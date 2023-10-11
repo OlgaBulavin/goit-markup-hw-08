@@ -2,11 +2,11 @@
     max-width: 370px;
 
     @media screen and (min-width: 768px) {
-        max-width: calc((100% - 30px) / 2);
+        width: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: calc((100% - 60px) / 3);
+        width: calc((100% - 60px) / 3);
     }
   }
 
@@ -22,7 +22,8 @@
     gap: 30px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      max-width: calc((100% - 30px) / 2);
+      width: calc((100% - 30px) / 2);
+      margin: 15px;
   }
 
   }
