@@ -880,7 +880,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (min-width: 768px) {
   .container-team {
-    width: 768px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
