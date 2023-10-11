@@ -67,6 +67,7 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -863,30 +864,6 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 
 .block.secondary {
   background-color: var(--secondary-button-color);
-}
-
-.container-team {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .container-team {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container-team {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container-team {
-    width: 1200px;
-  }
 }
 
 .item-shadow {
