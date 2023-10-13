@@ -683,12 +683,6 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   padding-left: 0;
   gap: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .gallerylist {
-    width: calc((100% - 30px) / 2);
-    margin: 15px;
-  }
-}
 
 .link-sdw {
   text-decoration: none;
