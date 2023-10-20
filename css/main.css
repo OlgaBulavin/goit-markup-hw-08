@@ -873,6 +873,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .item-shadow {
+    max-width: 270px;
+  }
+}
 
 .names {
   padding-top: 30px;
@@ -918,20 +923,19 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 .client-list-item {
   margin-right: 30px;
   height: 92px;
-  width: 170px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 .client-list-item:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 767px) {
-  .client-list-item {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 768px) {
   .client-list-item {
-    width: calc((100% - 60px) / 3);
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list-item {
+    width: 1200px;
   }
 }
 
