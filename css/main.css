@@ -921,21 +921,17 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .client-list-item {
-  gap: 30px;
   height: 92px;
   flex-basis: calc((100% - 30px) / 2);
 }
-.client-list-item:last-child {
-  margin-right: 0;
-}
 @media screen and (min-width: 768px) {
   .client-list-item {
-    width: 768px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .client-list-item {
-    width: 1200px;
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -957,8 +953,10 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 .client-list-icons {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
+  gap: 30px;
 }
 
 .container.clients {
