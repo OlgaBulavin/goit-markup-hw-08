@@ -921,7 +921,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .client-list-item {
-  margin-right: 30px;
+  gap: 30px;
   height: 92px;
   flex-basis: calc((100% - 30px) / 2);
 }
