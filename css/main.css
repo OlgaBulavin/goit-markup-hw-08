@@ -280,10 +280,6 @@ a:hover svg.social-list-icon, a:focus svg.social-list-icon {
   align-items: center;
 }
 
-.contacts {
-  display: none;
-}
-
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -402,6 +398,14 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    list-style: none;
+    margin-left: auto;
+    line-height: 1.17;
+    font-size: 12px;
   }
 }
 
