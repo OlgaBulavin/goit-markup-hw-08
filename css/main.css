@@ -997,6 +997,15 @@ a:hover svg.client-icon, a:focus svg.client-icon {
   text-decoration: none;
 }
 
+.infoicons {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .infoicons {
+    display: block;
+  }
+}
+
 .footer-list {
   list-style: none;
   padding-left: 0;
@@ -1010,6 +1019,7 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 @media screen and (max-width: 767px) {
   .footer-icons {
     margin-bottom: 60px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1117,7 +1127,6 @@ footer .container {
 }
 @media screen and (min-width: 768px) {
   footer .container {
-    display: flex;
     gap: 70px;
     align-items: baseline;
   }
