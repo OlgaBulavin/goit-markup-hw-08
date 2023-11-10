@@ -1018,14 +1018,14 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 }
 @media screen and (max-width: 767px) {
   .footer-icons {
-    margin-bottom: 60px;
-    margin-left: auto;
+    padding-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-icons {
-    margin-left: 85px;
-    text-align: left;
+    margin-left: 0;
+    align-items: baseline;
+    display: flex;
   }
 }
 
@@ -1136,6 +1136,11 @@ footer .container {
   background-color: var(--background-color-main);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    display: flex;
+  }
 }
 
 .footer {
