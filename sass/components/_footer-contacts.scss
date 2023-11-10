@@ -35,7 +35,8 @@
       display: block;
     }
 
-  
+   
+    
   }
   
   .footer-list {
@@ -47,6 +48,7 @@
 
   .footer-icons {
     text-align: center;
+    display: block;
 
     @media screen and (max-width: 767px) {
       padding-top: 0;

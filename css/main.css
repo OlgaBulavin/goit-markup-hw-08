@@ -72,6 +72,7 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    display: flex;
   }
 }
 
@@ -1015,6 +1016,7 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 
 .footer-icons {
   text-align: center;
+  display: block;
 }
 @media screen and (max-width: 767px) {
   .footer-icons {
@@ -1137,12 +1139,6 @@ footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .footer-block {
-    display: flex;
-  }
-}
-
 .footer {
   color: var(--title-text-color);
   font-style: normal;
@@ -1163,6 +1159,7 @@ footer .container {
 @media screen and (min-width: 1200px) {
   .footer-info {
     text-align: left;
+    margin-right: 70px;
   }
 }
 
