@@ -35,8 +35,6 @@
       display: block;
     }
 
-   
-    
   }
   
   .footer-list {
@@ -51,14 +49,14 @@
     display: block;
 
     @media screen and (max-width: 767px) {
-      padding-top: 0;
+    padding-top: 70px;
     }
 
     
     @media screen and (min-width: 1200px) {
     margin-left: 0;
-    align-items: baseline;
-    display: flex;
+    display: block;
+    text-align: left;
     }
   
   }

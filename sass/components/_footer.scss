@@ -7,21 +7,17 @@ footer .container {
       gap: 70px;
       align-items: baseline;
     }
+
+    @media screen and (min-width: 1200px) {
+  display: flex;
+    }
   
   }
   
   .footer-block {
     background-color: var(--background-color-main);
     padding-top: 60px;
-    padding-bottom: 60px;
-    
-
-    @media screen and (min-width: 1200px) {
-  
-    }
-    
-    
-   
+    padding-bottom: 60px; 
   }
   
   .footer {
@@ -38,6 +34,7 @@ footer .container {
 
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
+        padding-right: 70px;
       }
 
     @media screen and (min-width: 1200px) {

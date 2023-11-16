@@ -72,7 +72,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    display: flex;
   }
 }
 
@@ -1020,14 +1019,14 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 }
 @media screen and (max-width: 767px) {
   .footer-icons {
-    padding-top: 0;
+    padding-top: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-icons {
     margin-left: 0;
-    align-items: baseline;
-    display: flex;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -1133,12 +1132,18 @@ footer .container {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  footer .container {
+    display: flex;
+  }
+}
 
 .footer-block {
   background-color: var(--background-color-main);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer {
   color: var(--title-text-color);
   font-style: normal;
@@ -1154,6 +1159,7 @@ footer .container {
 @media screen and (max-width: 767px) {
   .footer-info {
     margin-bottom: 60px;
+    padding-right: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
