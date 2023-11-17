@@ -1003,6 +1003,13 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 @media screen and (max-width: 767px) {
   .infoicons {
     display: block;
+    justify-content: space-between;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .infoicons {
+    align-items: baseline;
   }
 }
 
@@ -1158,8 +1165,7 @@ footer .container {
 }
 @media screen and (max-width: 767px) {
   .footer-info {
-    margin-bottom: 60px;
-    padding-right: 70px;
+    padding-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
