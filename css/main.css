@@ -555,11 +555,6 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   margin: 0;
   gap: 30px;
 }
-@media screen and (min-width: 768px) {
-  .duty__list {
-    width: 354px;
-  }
-}
 
 .duty__item {
   width: 270px;
