@@ -555,6 +555,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   margin: 0;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .duty__list {
+    width: 354px;
+  }
+}
 
 .duty__item {
   width: 270px;
@@ -562,6 +567,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 @media screen and (max-width: 767px) {
   .duty__item {
     width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .duty__item {
+    width: 354px;
   }
 }
 
@@ -1071,6 +1081,7 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 
 .form {
   margin-left: auto;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .form {
