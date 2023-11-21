@@ -281,9 +281,15 @@ a:hover svg.social-list-icon, a:focus svg.social-list-icon {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .header {
@@ -406,8 +412,6 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
     line-height: 1.17;
     font-size: 12px;
     gap: 10px;
-    margin-bottom: 0;
-    margin-top: 0;
   }
 }
 
@@ -1012,13 +1016,14 @@ a:hover svg.client-icon, a:focus svg.client-icon {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 76px;
-    margin-right: 89px;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }
 @media screen and (min-width: 1200px) {
   .infoicons {
     align-items: baseline;
+    padding-left: 0;
   }
 }
 
@@ -1069,17 +1074,16 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 }
 @media screen and (min-width: 768px) {
   .form {
-    display: block;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .form {
-    margin-left: auto;
+    display: flex;
+    margin-left: 0;
+    text-align: left;
   }
 }
 
