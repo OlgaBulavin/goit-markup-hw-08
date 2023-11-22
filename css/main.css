@@ -1092,9 +1092,17 @@ a:hover svg.client-icon, a:focus svg.client-icon {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .form-decktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-decktop {
     flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -1126,6 +1134,11 @@ a:hover svg.client-icon, a:focus svg.client-icon {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .sub-text {
+    text-align: left;
+  }
 }
 
 .btn-submit {
