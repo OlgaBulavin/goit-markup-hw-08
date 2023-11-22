@@ -1,6 +1,5 @@
 .form {
     margin-left: auto;
-   
     text-align: center;
     
 
@@ -11,12 +10,21 @@
 }
 
     @media screen and (min-width: 1200px) {
-      display: flex;
+     
         margin-left: 0;
         text-align: left;
       }
   }
   
+  
+  .form-decktop {
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    }
+  }
+
+
+
   .form input {
   margin: 0;
   width: 358px;
