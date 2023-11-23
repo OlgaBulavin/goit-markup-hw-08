@@ -3,6 +3,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
+
   }
   
   .hero.overlay {
@@ -24,9 +25,26 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
       .hero.overlay {
-        background-image: url("../images/Headerimg@2x.jpg")
+        background-image: url("../images/Img-backgr@2x.jpg");
       }
     }
+
+    @media screen and (max-width: 767px) {
+      background-image: url("../images/Headerimg_mobile.jpg");
+    }
+
+     @media screen and (min-resolution:2dppx) {
+      background-image: url("../images/Headerimg_mobile@2x.jpg");
+     }
+
+     @media screen and (min-width: 768px) {
+      background-image: url("../images/Headerimg_tablet.jpg");
+    }
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../images/Headerimg_tablet@2x.jpg")
+    }
+
   }
   
 

@@ -95,7 +95,27 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero.overlay .hero.overlay {
-    background-image: url("../images/Headerimg@2x.jpg");
+    background-image: url("../images/Img-backgr@2x.jpg");
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero.overlay {
+    background-image: url("../images/Headerimg_mobile.jpg");
+  }
+}
+@media screen and (min-resolution: 2dppx) {
+  .hero.overlay {
+    background-image: url("../images/Headerimg_mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero.overlay {
+    background-image: url("../images/Headerimg_tablet.jpg");
+  }
+}
+@media screen and (min-resolution: 2dppx) {
+  .hero.overlay {
+    background-image: url("../images/Headerimg_tablet@2x.jpg");
   }
 }
 
@@ -1138,6 +1158,7 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 @media screen and (min-width: 1200px) {
   .sub-text {
     text-align: left;
+    width: 100%;
   }
 }
 
