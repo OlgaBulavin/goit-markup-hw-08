@@ -25,24 +25,39 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
       .hero.overlay {
-        background-image: url("../images/Img-backgr@2x.jpg");
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ), url("../images/Img-backgr@2x.jpg");
       }
     }
 
     @media screen and (max-width: 767px) {
-      background-image: url("../images/Headerimg_mobile.jpg");
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url("../images/Headerimg_mobile.jpg");
     }
 
      @media screen and (min-resolution:2dppx) {
-      background-image: url("../images/Headerimg_mobile@2x.jpg");
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url("../images/Headerimg_mobile@2x.jpg");
      }
 
      @media screen and (min-width: 768px) {
-      background-image: url("../images/Headerimg_tablet.jpg");
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url("../images/Headerimg_tablet.jpg");
     }
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../images/Headerimg_tablet@2x.jpg")
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url("../images/Headerimg_tablet@2x.jpg")
     }
 
   }
