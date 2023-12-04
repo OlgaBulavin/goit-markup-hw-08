@@ -773,6 +773,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .info-name {
+    flex-grow: 1;
+  }
+}
 
 .title-name {
   color: var(--secondary-text-color);
@@ -1043,6 +1048,7 @@ a:hover svg.client-icon, a:focus svg.client-icon {
     width: 100%;
     padding-left: 76px;
     padding-right: 89px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1065,7 +1071,7 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 }
 @media screen and (max-width: 767px) {
   .footer-icons {
-    padding-top: 70px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1225,6 +1231,7 @@ footer .container {
 
 .footer-info {
   text-align: center;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-info {
@@ -1235,7 +1242,6 @@ footer .container {
 @media screen and (min-width: 1200px) {
   .footer-info {
     text-align: left;
-    margin-right: 70px;
   }
 }
 

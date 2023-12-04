@@ -216,30 +216,26 @@
           <ul class="gallerylist">
             <li class="item-shadow">
 
-              <picture>
-                <source 
-                media="(min-width: 768px)"
-                type="image/jpg"
-                srcset="./images/igor.jpg 1x,
-                        ./images/img@2x.jpg 2x"/>
-                <source 
-                media="(min-width: 768px)"
-                type="image/jpg"
-                srcset="./images/olga.jpg 1x,
-                        ./images/imgolga@2x.jpg 2x"/>
-                <source 
-                media="(min-width: 768px)"
-                type="image/jpg"
-                srcset="./images/mukola.jpg 1x,
-                      ./images/imgmukola@2x.jpg 2x"/>
-                <source 
-                media="(min-width: 768px)"
-                type="image/jpg"
-                srcset="./images/muxailo.jpg 1x,
-                        ./images/imgmuhailo@2x.jpg 2x"/>
+        <picture>
+          <source
+            srcset="./images/igor.jpg 1x, ./images/img@2x.jpg 2x"
+            media="(min-width:1200px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./images/imgIgor-tablet.jpg 1x, ./imgIgor-tablet@2x.jpg 2x"
+            media="(min-width:768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./images/imgIgor-mobile.jpg 1x, ./images/imgIgor-mobile@2x.jpg 2x"
+            media="(max-width:767px)"
+            type="image/jpeg"
+          />
+          <img src="./images/imgIgor-mobile.jpg" alt="team member" />
+        </picture>
 
-              </picture>
-
+      
               <img
                 class="image"
                 src="./images/igor.jpg"
