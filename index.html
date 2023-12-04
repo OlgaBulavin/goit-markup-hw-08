@@ -235,13 +235,6 @@
           <img src="./images/imgIgor-mobile.jpg" alt="team member" />
         </picture>
 
-      
-              <img
-                class="image"
-                src="./images/igor.jpg"
-                alt="Ігор Дем'яненко"
-                height="260"
-              />
               <div class="names">
                 <h3 class="title person">Ігор Дем'яненко</h3>
                 <p class="prof">Product Designer</p>
@@ -278,12 +271,25 @@
               </div>
             </li>
             <li class="item-shadow">
-              <img
-                class="image"
-                src="./images/olga.jpg"
-                alt="Ольга Рєпіна"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga-desc@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/imgOlga-tablet.jpg 1x, ./imgOlga-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/imgOlga-mobile.jpg 1x, ./images/imgOlga-mobile@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/imgOlga-mobile.jpg" alt="team member" />
+              </picture>
+
               <div class="names">
                 <h3 class="title person">Ольга Рєпіна</h3>
                 <p class="prof">Frontend Developer</p>
