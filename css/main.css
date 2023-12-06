@@ -94,7 +94,7 @@ img {
   background-position: center;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero.overlay .hero.overlay {
+  .hero.overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-backgr@2x.jpg");
   }
 }
@@ -210,15 +210,25 @@ a:hover svg.social-list-icon, a:focus svg.social-list-icon {
 
 .hero__title {
   color: var(--title-text-color);
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.4;
+  letter-spacing: 0.06em;
   font-weight: 900;
-  max-width: 696px;
+  max-width: 360px;
+  word-wrap: break-word;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -695,7 +705,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .gallery {
-  max-width: 370px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .gallery {
@@ -742,8 +752,8 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   padding-left: 24px;
   padding-right: 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   font-family: "Roboto";
   font-style: normal;
   font-size: 18px;
@@ -1327,6 +1337,10 @@ footer .container {
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: rgb(33, 150, 243);
+}
+
+.mobile-menu__link-activ {
+  color: var(--accent-color);
 }
 
 .mobile-contacts {

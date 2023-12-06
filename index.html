@@ -69,9 +69,9 @@
 
         <div class="container">
         <ul class="mobile-menu">
-          <li><a href="" class="mobile-menu__link">Студія</a></li>
-          <li><a href="" class="mobile-menu__link">Портфоліо</a></li>
-          <li><a href="" class="mobile-menu__link">Контакти</a></li>
+          <li><a href="index.html" class="mobile-menu__link mobile-menu__link-activ">Студія</a></li>
+          <li><a href="portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+          <li><a href="#address" class="mobile-menu__link">Контакти</a></li>
         </ul>
          <div class="mob-menu">
         <ul class="mobile-contacts">
@@ -172,37 +172,31 @@
           <ul class="gallerylist">
             <li>
               <div class="thumb">
-              <img
-                class="image"
-                src="./images/img.jpg"
-                alt="Пишемо код на планшеті"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source srcset="./images/img.jpg 1x, ./images/laptop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpg" >
+                  <img src="./images/img.jpg" alt="laptop">
+              </picture>
               <h3 class="pic-text">Десктопні додатки</h3>
             </div>
             </li>
             <li>
               <div class="thumb">
-              <img
-                class="image"
-                src="./images/img-2.jpg"
-                alt="Тримаємо телефон"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source srcset="./images/img-2.jpg 1x, ./images/iphone@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpg" >
+                  <img src="./images/img-2.jpg" alt="iphone">
+              </picture>
               <h3 class="pic-text">Мобільні додатки</h3>
             </div
             ></li>
             <li>
               <div class="thumb">
-              <img
-                class="image"
-                src="./images/img-3.jpg"
-                alt="Палітра кольорів на планшеті"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source srcset="./images/img-3.jpg 1x, ./images/laptop2@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpg" >
+                  <img src="./images/img-3.jpg" alt="laptop2">
+              </picture>
               <h3 class="pic-text">Дизайнерські рішення</h3>
             </div>
             </li>
@@ -223,7 +217,7 @@
             type="image/jpeg"
           />
           <source
-            srcset="./images/imgIgor-tablet.jpg 1x, ./imgIgor-tablet@2x.jpg 2x"
+            srcset="./images/imgIgor-tablet.jpg 1x, ./images/imgIgor-tablet@2x.jpg 2x"
             media="(min-width:768px)"
             type="image/jpeg"
           />
@@ -273,12 +267,12 @@
             <li class="item-shadow">
               <picture>
                 <source
-                  srcset="./images/olga.jpg 1x, ./images/olga-desc@2x.jpg 2x"
+                  srcset="./images/olga.jpg 1x, ./images/imgolga@2x.jpg 2x"
                   media="(min-width:1200px)"
                   type="image/jpeg"
                 />
                 <source
-                  srcset="./images/imgOlga-tablet.jpg 1x, ./imgOlga-tablet@2x.jpg 2x"
+                  srcset="./images/imgOlga-tablet.jpg 1x, ./images/imgOlga-tablet@2x.jpg 2x"
                   media="(min-width:768px)"
                   type="image/jpeg"
                 />
@@ -326,12 +320,24 @@
               </div>
             </li>
             <li class="item-shadow">
-              <img
-                class="image"
-                src="./images/mukola.jpg"
-                alt="Микола Тарасов"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/mukola.jpg 1x, ./images/imgmukola@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/Mikola-tablet.jpg 1x, ./images/Mikola-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/Mikola-mobile.jpg 1x, ./images/Mikola-mobile@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/Mikola-mobile.jpg" alt="team member" />
+              </picture>
               <div class="names">
                 <h3 class="title person">Микола Тарасов</h3>
                 <p class="prof">Marketing</p>
@@ -368,12 +374,25 @@
               </div>
             </li>
             <li class="item-shadow">
-              <img
-                class="image"
-                src="./images/muxailo.jpg"
-                alt="Михайло Єрмаков"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/muxailo.jpg 1x, ./images/imgmuhailo@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/Mixailo-tablet.jpg 1x, ./images/Mixailo-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/Mixailo-mobile.jpg 1x, ./images/Mihailo-mobile@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/Mixailo-mobile.jpg" alt="team member" />
+              </picture>
+
               <div class="names">
                 <h3 class="title person">Михайло Єрмаков</h3>
                 <p class="prof">UI Designer</p>
