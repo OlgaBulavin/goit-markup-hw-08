@@ -48,8 +48,8 @@
     .blue-text {
     position: absolute;
     margin: 0;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px;
     background-color: rgba(33, 150, 243, 0.9);
@@ -57,7 +57,7 @@
     height: 100%;
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -70,6 +70,13 @@
     .link-sdw:hover &, .link-sdw:focus & {
       transform: translateY(-100%);
     }
+
+    @media screen and (min-width: 481px) and (max-width: 1199px) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+    font-size: 18px;
+    }
+    
     }
     
     

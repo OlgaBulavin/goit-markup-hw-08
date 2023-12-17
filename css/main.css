@@ -45,8 +45,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .link {
@@ -81,13 +87,6 @@ img {
   padding-bottom: 180px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1199px) {
-  .hero {
-    padding-top: 180px;
-    padding-bottom: 180px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
@@ -98,7 +97,6 @@ img {
 
 .hero.overlay {
   max-width: 1600px;
-  height: 600px;
   outline: 1px solid black;
   margin-left: auto;
   margin-right: auto;
@@ -130,6 +128,13 @@ img {
 @media screen and (min-resolution: 2dppx) {
   .hero.overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_tablet@2x.jpg");
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero.overlay {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    margin: 0 auto;
   }
 }
 
@@ -272,7 +277,7 @@ a:hover svg.social-list-icon, a:focus svg.social-list-icon {
   padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -530,10 +535,14 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  margin-top: 30px;
 }
 .contact-form-submit-btn:hover, .contact-form-submit-btn:focus {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .contact-form-submit-btn {
+    margin-top: 30px;
+  }
 }
 
 .contact-form-checkbox-label {
@@ -641,6 +650,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
     width: 450px;
   }
 }
+@media screen and (max-width: 479px) {
+  .duty__link {
+    width: 320px;
+  }
+}
 
 .duty__title {
   color: var(--secondary-text-color);
@@ -660,6 +674,16 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .duty__text {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .duty__text {
+    width: 320px;
+  }
 }
 
 .header__link {
@@ -773,8 +797,8 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 .blue-text {
   position: absolute;
   margin: 0;
-  padding-top: 63px;
-  padding-bottom: 63px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -782,7 +806,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   height: 100%;
   font-family: "Roboto";
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: #FFFFFF;
@@ -793,6 +817,13 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 .link-sdw:hover .blue-text, .link-sdw:focus .blue-text {
   transform: translateY(-100%);
+}
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .blue-text {
+    padding-top: 63px;
+    padding-bottom: 63px;
+    font-size: 18px;
+  }
 }
 
 .image-blue {
@@ -1089,8 +1120,6 @@ a:hover svg.client-icon, a:focus svg.client-icon {
     justify-content: space-between;
     width: 100%;
     padding-left: 76px;
-    padding-right: 89px;
-    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1176,13 +1205,23 @@ a:hover svg.client-icon, a:focus svg.client-icon {
 
 .form input {
   margin: 0;
-  width: 358px;
+  width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: #2F303A;
   padding-left: 16px;
+}
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .form input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form input {
+    width: 358px;
+  }
 }
 
 .subcribe-input {
@@ -1284,6 +1323,7 @@ footer .container {
 @media screen and (min-width: 1200px) {
   .footer-info {
     text-align: left;
+    padding: 0;
   }
 }
 
@@ -1305,11 +1345,17 @@ footer .container {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 306px;
+  margin-bottom: 200px;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .mobile-menu {
+    display: none;
+    margin-bottom: 306px;
   }
 }
 
