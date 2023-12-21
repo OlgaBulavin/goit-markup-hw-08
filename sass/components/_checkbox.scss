@@ -1,5 +1,5 @@
 .contact-form-checkbox-label {
-   
+  
     align-items: center;
     font-family: 'Roboto';
     font-size: 14px;
@@ -28,6 +28,7 @@
 
   .contact-checkbox {
     margin-left: 13px;
+    vertical-align: baseline;
     
   }
   
@@ -43,12 +44,12 @@
     padding: 0;
     vertical-align: middle;
     cursor: pointer;
-    width: 15px;
-    height: 16px;
+    width: 11px;
+    height: 8px;
   }
   
   .black-border {
-    display: flex;
+    display: inline-block;
     border: 2px solid black;
     border-radius: 2px;
     width: 16px;
