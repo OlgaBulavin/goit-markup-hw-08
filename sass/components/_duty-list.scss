@@ -1,5 +1,5 @@
 .duty__list {
-    list-style: none;
+  list-style: none;
    display: flex;
    flex-wrap: wrap;
     padding-left: 0;
@@ -17,7 +17,7 @@
       width: 450px;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 354px;
     }
 
