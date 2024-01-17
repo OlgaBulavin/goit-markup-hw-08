@@ -634,7 +634,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .duty__item {
-  width: 270px;
+  width: 290px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .duty__item {
@@ -657,14 +657,14 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .duty__link {
     width: 450px;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .duty__link {
-    width: 320px;
+    width: 354px;
   }
 }
 
@@ -694,7 +694,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 @media screen and (max-width: 479px) {
   .duty__text {
-    width: 320px;
+    width: 290px;
   }
 }
 
