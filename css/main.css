@@ -636,7 +636,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 .duty__item {
   width: 270px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .duty__item {
     width: 450px;
   }
