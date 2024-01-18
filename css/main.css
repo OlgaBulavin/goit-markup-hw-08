@@ -566,6 +566,11 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   color: #757575;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 320px) {
+  .contact-form-checkbox-label {
+    display: flex;
+  }
+}
 
 .contact-form-checkbox {
   margin-bottom: 10px;
@@ -597,12 +602,12 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
   padding: 0;
   vertical-align: middle;
   cursor: pointer;
-  width: 11px;
-  height: 8px;
+  width: 15px;
+  height: 16px;
 }
 
 .black-border {
-  display: inline-block;
+  display: flex;
   border: 2px solid black;
   border-radius: 2px;
   width: 16px;
