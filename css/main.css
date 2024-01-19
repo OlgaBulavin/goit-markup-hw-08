@@ -558,7 +558,6 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .contact-form-checkbox-label {
-  display: inline-block;
   align-items: center;
   font-family: "Roboto";
   font-size: 14px;
@@ -574,6 +573,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .contact-form-checkbox {
+  display: inline-block;
   margin-bottom: 10px;
   border: 2px solid #212121;
   color: var(--accent-color);
@@ -608,7 +608,7 @@ a:hover svg.contacts__icon, a:focus svg.contacts__icon {
 }
 
 .black-border {
-  display: flex;
+  display: inline-block;
   overflow: hidden;
   border: 2px solid black;
   border-radius: 2px;
